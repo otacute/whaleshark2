@@ -1,0 +1,65 @@
+---
+title: "구해줘 NamQ의 홈즈"
+author: "고래상어조"
+format: 
+    dashboard:
+        scrolling: true 
+        logo: palmerpenguins.png
+---
+
+# Page 1
+
+<배경>
+- Name: 강남규
+- Age: 58
+- Work: 도서관 사서
+- Family: 아내, 아들, 딸 (4인 가정)
+- Location: Ames, Iowa
+- Character: 가족의 행복이 곧 본인의 행복! 더 좋은 집에서 지내기 위해 아이오아주 에임스시 내에서 이사를 가기로 결정했다.
+
+
+## Row 
+
+
+<구해줘! NamQ 홈즈>
+- 부동산 전문가 이삭씨(67세)에게 집 매물 추천을 받기로 했다.
+- 아들 강낭콩(22세)군: 아이오아주 주립대학에 다니고 있고
+- 딸 강된장(18세): Ames High School 에 재학 중이다. 
+- 보유 차량: 2대
+- 원하는 집 조건: 가족들의 편의를 위해서 최소 샤워가 가능한 화장실 1개, 간이 화장실 1개 이상을 원함.
+- 남규씨가 이사갈 집을 고르자 
+
+
+```{python}
+import pandas as pd
+
+# https://docs.google.com/spreadsheets/d/1McH-oBzPZ8ewfyEl605wq-9b3gZHCIIBVbWHEHwNnIs/edit?gid=941998772#gid=941998772
+gsheet_url = "https://docs.google.com/spreadsheets/d/1McH-oBzPZ8ewfyEl605wq-9b3gZHCIIBVbWHEHwNnIs/gviz/tq?tqx=out:csv&sheet=ames-spot"
+
+df = pd.read_csv(gsheet_url)
+df
+```
+
+## Row {.tabset}
+
+### 테스트 1
+
+```{python}
+import pandas as pd
+
+# https://docs.google.com/spreadsheets/d/1McH-oBzPZ8ewfyEl605wq-9b3gZHCIIBVbWHEHwNnIs/edit?gid=941998772#gid=941998772
+gsheet_url = "https://docs.google.com/spreadsheets/d/1McH-oBzPZ8ewfyEl605wq-9b3gZHCIIBVbWHEHwNnIs/gviz/tq?tqx=out:csv&sheet=ames-spot"
+
+df = pd.read_csv(gsheet_url)
+df
+```
+
+### 테스트 2
+
+::: {.card title="My Title"}
+This text will be displayed within a card
+:::
+
+# Page 2
+
+테스트
