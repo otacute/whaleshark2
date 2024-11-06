@@ -1,0 +1,48 @@
+/* 대시보드 배경색 변경 */
+.dashboard-page {
+    background-color: #F2F2F2; /* 원하는 색상 코드로 변경 */
+}
+
+
+/* 헤더 배경색 변경 */
+.navbar {
+    background-color: #264773; /* 원하는 색상 코드로 변경 */
+}
+
+/* 헤더에서 페이지 클릭 시 활성화된 링크(탭)의 배경색 변경 */
+.navbar .navbar-nav > li > a.active,
+.navbar .navbar-nav > li > a:hover {
+    background-color: #F2EA79; /* 클릭한 탭의 배경색 */
+    color: #264773; /* 텍스트 색상 */
+}
+
+/* 헤더 링크의 기본 상태 텍스트 색상 변경 */
+.navbar .navbar-nav > li > a {
+    color: #F2F2F2; /* 링크의 기본 텍스트 색상 */
+}
+
+/* 여백 지정 */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; /* 전체 화면 높이 */
+}
+
+.main-content {
+    flex: 1;
+    overflow: auto;
+}
+
+
+.custom-height {
+  height: 300px;
+  overflow: auto; /* 내용이 길면 숨기기 */
+}
+
+
+.custom-column {
+  height: 800px;
+  overflow: auto;  /* 필요에 따라 스크롤 가능 */
+}
+

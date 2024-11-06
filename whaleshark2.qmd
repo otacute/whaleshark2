@@ -1,0 +1,168 @@
+---
+title: "<span style='color:#F2EA79'>**구해줘 NamQ의 홈즈**</span>"
+author: "*고래상어조*"
+format: 
+    dashboard:
+        scrolling: true 
+        logo: NamQHome_logo.png
+        css: styles.css
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# 의뢰인 정보
+
+## Row
+
+::: {.card title="**의뢰자 NamQ씨의 Profile**"}
+![청춘의 남규씨 사진](강남규.jpg)
+
+> *이삭선생님! 옛정을 봐서 좋은 집 찾아주십쇼.*
+
+-   > 의뢰인의 인생 철학 : 가족의 행복이 곧 본인의 행복!
+
+-   Name: 강남규
+
+-   Age: 58
+
+-   Job: 도서관 사서
+
+-   Location: Ames, Iowa
+
+-   Family: 4인 가구 - 아내(미모의 여성), 아들(강낭콩), 딸(강된장)
+
+-   평생 지낼 인생 마지막 집을 구하기 위해 아이오아주 에임스시 내에서
+    이사를 가기로 결정했다.
+:::
+
+::: {.card title="**남Q씨의 젊은 시절 인연 부동산 전문가 이삭**"}
+![남규학생, 저만 믿어요. 저 부동산 전문갑니다.](이삭선생님.png)
+
+> *남Q님, 이 Issac만 믿어보세요. 좋은 매물을 찾아주겠습니다.*
+
+-   부동산 전문가 이삭씨(67세)에게 집 매물 추천을 받기로 했다.
+
+-   아들 강낭콩(22세)군: 아이오아주 주립대학 재학
+
+-   딸 강된장(18세): Ames High School 에 재학 중이다.
+
+- 의뢰자의 조건
+
+-   보유 차량 : 2대
+
+-   화장실 2개 : 가족들의 편의를 위해서 최소 샤워가 가능한 화장실 1개,
+    간이 화장실 1개 이상을 원함.
+
+-   조건에 맞는 남규씨의 새 집을 고르자
+:::
+
+## Row {.tabset}
+
+### Ames에서 집을 고르려면 어떤 요소들이 있을까?
+
+```{python}
+import pandas as pd
+
+# https://docs.google.com/spreadsheets/d/1McH-oBzPZ8ewfyEl605wq-9b3gZHCIIBVbWHEHwNnIs/edit?gid=941998772#gid=941998772
+gsheet_url = "https://docs.google.com/spreadsheets/d/1McH-oBzPZ8ewfyEl605wq-9b3gZHCIIBVbWHEHwNnIs/gviz/tq?tqx=out:csv&sheet=codebook"
+
+codebook = pd.read_csv(gsheet_url)
+codebook.iloc[:, 1:3]
+```
+
+
+# ames 소개
+
+아이오와주 에임스의 중간 부동산 가격은 2022년 $247,500로 전국 평균인 $281,900보다 0.878배 적습니다. 2021년에서 2022년 사이에 중간 부동산 가치는 $222,900에서 $247,500로 11% 증가했습니다. 아이오와주 에임스의 주택 소유율은 42%로 전국 평균인 64.8%와 거의 같습니다.
+
+아이오와주 에임스에 있는 사람들의 평균 통근 시간은 15.8분이며 혼자 운전하여 출근했습니다. 아이오와주 에임스의 자동차 소유율은 전국 평균과 거의 같으며 가구당 평균 2대의 자동차가 있습니다.
+
+아이오와주 에임스의 중간 가구 소득은 $57,428입니다. 2022년 아이오와주 에임스에서 중간 가구 소득이 가장 높은 곳은 $139,853의 값을 가진 Census Tract 12였고, 그 다음은 Census Tract 2와 Census Tract 6으로 각각 $80,984와 $80,337였습니다.
+
+## Row
+
+::: {.card title="**아이오와주에서 에임스의 위치는?**"}
+```{python}
+import pandas as pd
+import numpy as np
+
+import json
+geo = json.load(open('bigdata/ia_iowa_zip_codes_geo.min.json', encoding = 'UTF-8'))
+
+def make_ames(num) : 
+    postal_code = geo["features"][num]["properties"]['ZCTA5CE10']
+    coordinate_list = geo["features"][num]["geometry"]["coordinates"][0]
+    coordinate_array = np.array(coordinate_list)
+    x = coordinate_array[:, 0].flatten()
+    y = coordinate_array[:, 1].flatten()
+
+    return pd.DataFrame({"postal_code" : postal_code, "x":x, "y":y})
+
+result = pd.DataFrame({
+    'postal_code' : [],
+    'x' : [],
+    'y' : []
+})
+
+for i in range(len(geo["features"])) : 
+    result = pd.concat([result, make_ames(i)], ignore_index=True)
+
+# ames만 그림 그리기
+# ames의 postal codes
+ames_postal_codes = ['50010', '50011', '50012', '50013', '50014']
+result['location'] = np.where(result['postal_code'].isin(ames_postal_codes), 'Ames', 'Iowa')
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+sns.scatterplot(data = result, 
+                x='x', y='y', 
+                hue="location", s=1,
+                palette={"Ames":"red", "Iowa":"grey"}
+                )
+plt.xlim((-97, -89.5))
+plt.ylim((40.2, 43.8))
+plt.show()
+plt.clf()
+
+```
+:::
+
+
+
+# 매물 선택
+
+테스트
+
+# 매입 적기
+
+```{python}
+# 시계열 나도 해보자.
+import plotly.graph_objects as go
+import plotly.express as px
+import pandas as pd
+import numpy as np
+
+house_train = pd.read_csv("./data/train.csv")
+house_train = house_train[['YrSold','MoSold', 'SalePrice']]
+
+# 년도별로 group by 해서 Sale_Price의 평균 구하기
+group_df = house_train.groupby(['YrSold', 'MoSold'])['SalePrice'].agg('mean').reset_index()
+
+# --------------------------------
+# 새로운 'YrMo' 컬럼을 생성하여 시간 축으로 사용
+group_df['YrMo'] = group_df['YrSold'].astype(str) + '-' + group_df['MoSold'].astype(str)
+
+# Plotly Express를 사용하여 선 그래프 생성
+fig = px.line(group_df, 
+              x='YrMo', 
+              y='SalePrice', 
+              title='월별 평균 SalePrice의 변화 (2006-2010)', 
+              labels={'SalePrice':'Average SalePrice', 'YrMo':'Year-Month'})
+
+# x축 레이블 회전 (가독성 향상)
+fig.update_xaxes(tickangle=45)
+
+# 그래프 표시
+fig.show()
+```

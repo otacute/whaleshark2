@@ -1,0 +1,906 @@
+---
+title: "<span style='color:#F2EA79'>**구해줘 NamQ의 홈즈**</span>"
+author: "*고래상어조*"
+format: 
+    dashboard:
+        scrolling: true 
+        logo: NamQHome_logo.png
+        css: styles.css
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# 의뢰인 정보
+
+## Row
+
+::: {.card title="**의뢰자 NamQ씨의 Profile**"}
+![청춘의 남규씨 사진](강남규.jpg)
+
+> *이삭선생님! 옛정을 봐서 좋은 집 찾아주십쇼.*
+
+-   > 의뢰인의 인생 철학 : 가족의 행복이 곧 본인의 행복!
+
+-   Name: 강남규
+
+-   Age: 58
+
+-   Job: 도서관 사서
+
+-   Location: Ames, Iowa
+
+-   Family: 4인 가구 - 아내(미모의 여성), 아들(강낭콩), 딸(강된장)
+
+-   평생 지낼 인생 마지막 집을 구하기 위해 아이오아주 에임스시 내에서
+    이사를 가기로 결정했다.
+:::
+
+::: {.card title="**남Q씨의 젊은 시절 인연 부동산 전문가 이삭**"}
+![남규학생, 저만 믿어요. 저 부동산 전문갑니다.](이삭선생님.png)
+
+> *남Q님, 이 Issac만 믿어보세요. 좋은 매물을 찾아주겠습니다.*
+
+-   부동산 전문가 이삭씨(67세)에게 집 매물 추천을 받기로 했다.
+
+-   아들 강낭콩(22세)군: 아이오아주 주립대학 재학
+
+-   딸 강된장(18세): Ames High School 에 재학 중이다.
+
+- 의뢰자의 조건
+
+-   보유 차량 : 2대
+
+-   화장실 2개 : 가족들의 편의를 위해서 최소 샤워가 가능한 화장실 1개,
+    간이 화장실 1개 이상을 원함.
+
+-   조건에 맞는 남규씨의 새 집을 고르자
+:::
+
+
+
+## Row {.tabset}
+
+### Ames에서 집을 고르려면 어떤 요소들이 있을까?
+
+```{python}
+import pandas as pd
+
+# https://docs.google.com/spreadsheets/d/1McH-oBzPZ8ewfyEl605wq-9b3gZHCIIBVbWHEHwNnIs/edit?gid=941998772#gid=941998772
+gsheet_url = "https://docs.google.com/spreadsheets/d/1McH-oBzPZ8ewfyEl605wq-9b3gZHCIIBVbWHEHwNnIs/gviz/tq?tqx=out:csv&sheet=codebook"
+
+codebook = pd.read_csv(gsheet_url)
+components = codebook.iloc[:,[0,1,2,3,5]]
+
+from itables import show
+show(components, buttons = ['copy', 'excel', 'pdf'])
+```
+
+# Ames 소개
+
+## Waukee 소개
+
+```{python}
+real_estate_price2 = 305300
+home_ownership_rate2 = 70.7
+commute_time2 = 19.6
+car_mean2 = 2
+mean_income2 = 106846
+```
+
+## Row
+```{python}
+#| content: valuebox
+#| title: "Waukee시 평균 소득 (단위 : $)"
+#| icon: cash-coin
+#| color: warning
+dict(
+  value = mean_income2
+)
+```
+
+```{python}
+#| content: valuebox
+#| title: "Waukee시 평균 부동산 가격(단위 : $)"
+#| icon: currency-dollar
+#| color: danger
+dict(
+  value = real_estate_price2
+)
+```
+```{python}
+#| content: valuebox
+#| title: "Waukee시 주택 소유율(단위 : %)"
+#| icon: house-heart-fill
+#| color: dark
+dict(
+  value = home_ownership_rate2
+)
+```
+
+```{python}
+#| content: valuebox
+#| title: "Waukee시 평균 통근 시간(단위 : 분)"
+#| icon: person-walking
+#| color: success
+dict(
+  value = commute_time2
+)
+```
+
+```{python}
+#| content: valuebox
+#| title: "Waukee시 평균 차량 개수(단위 : 대)"
+#| icon: car-front-fill
+#| color: light
+dict(
+  value = car_mean2
+)
+```
+
+
+## ames 소개
+
+```{python}
+real_estate_price = 247500
+home_ownership_rate = 42
+commute_time = 15.8
+car_mean = 2
+mean_income = 57428
+```
+
+## Row
+```{python}
+#| content: valuebox
+#| title: "Ames시 평균 소득 (단위 : $)"
+#| icon: cash-coin
+#| color: warning
+dict(
+  value = mean_income
+)
+```
+
+```{python}
+#| content: valuebox
+#| title: "Ames시 평균 부동산 가격(단위 : $)"
+#| icon: currency-dollar
+#| color: danger
+dict(
+  value = real_estate_price
+)
+```
+```{python}
+#| content: valuebox
+#| title: "Ames시 주택 소유율(단위 : %)"
+#| icon: house-heart-fill
+#| color: dark
+dict(
+  value = home_ownership_rate
+)
+```
+
+```{python}
+#| content: valuebox
+#| title: "Ames시 평균 통근 시간(단위 : 분)"
+#| icon: person-walking
+#| color: success
+dict(
+  value = commute_time
+)
+```
+
+```{python}
+#| content: valuebox
+#| title: "Ames시 평균 차량 개수(단위 : 대)"
+#| icon: car-front-fill
+#| color: light
+dict(
+  value = car_mean
+)
+```
+
+## Row
+
+```{python}
+# 통근수단 2022년
+import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib import font_manager, rc
+
+def custom_autopct(pct, allvalues):
+    absolute = int(round(pct/100.*sum(allvalues)))
+    return f'{pct:.1f}%\n({absolute:,})' if pct == max(pct, 100-pct) else f'{pct:.1f}%'
+
+def draw_pie_chart():
+    # 한글 글꼴 설정
+    font_path = "C:/Windows/Fonts/malgun.ttf"  # "맑은 고딕" 글꼴 경로
+    font_name = font_manager.FontProperties(fname=font_path).get_name()
+    rc('font', family=font_name)
+
+    # CSV 파일 읽기
+    transportation = pd.read_csv('data/transportation.csv')
+
+    # 2022년 데이터만 필터링
+    data_2022 = transportation[transportation['Year'] == 2022]
+
+    # Group 별로 Commute Means를 집계
+    grouped_data = data_2022.groupby('Group')['Commute Means'].sum()
+
+    # 전체 합계 계산 후 비율로 변환
+    total_commute = grouped_data.sum()
+    grouped_data_percentage = (grouped_data / total_commute) * 100
+
+    # 비율로 정렬
+    grouped_data_percentage = grouped_data_percentage.sort_values(ascending=False)
+
+    # 상위 5개 항목을 제외한 나머지를 "Others"로 묶기
+    top_5 = grouped_data_percentage[:5]
+    others = grouped_data_percentage[5:].sum()
+    top_5['Others'] = others
+
+    # 파스텔 색상 리스트 (6개의 색상으로 설정)
+    colors = plt.cm.Pastel1(range(len(top_5)))
+
+    # 원형 그래프 그리기
+    plt.figure(figsize=(10, 6))  # 그래프의 전체 크기를 조정
+    wedges, texts, autotexts = plt.pie(top_5, 
+            labels=None,  # 레이블 제거
+            autopct=lambda pct: custom_autopct(pct, top_5), 
+            startangle=140, 
+            colors=colors, 
+            textprops={'fontsize': 12},  # 글자 크기 조금 키움
+            labeldistance=0.7,  # 레이블 위치 조정
+            pctdistance=0.8)  # 퍼센트 위치 조정
+
+    # 1위 항목의 레이블 추가
+    max_label_index = top_5.idxmax()
+    for i, a in enumerate(autotexts):
+        if top_5.index[i] == max_label_index:
+            a.set_text(f'{top_5.index[i]}:\n{a.get_text()}')
+        else:
+            a.set_text(a.get_text())
+
+    # 라벨을 원 바깥으로 빼고, 라벨과 원을 선으로 연결
+    plt.legend(top_5.index, title="Commute Types", loc="center left", bbox_to_anchor=(1.0, 0.5), fontsize='medium')
+
+    # 제목 설정
+    plt.title('통근 수단 (2022년)', pad=20, fontsize=16)
+    plt.show()
+
+# 함수 호출
+draw_pie_chart()
+
+```
+## Row
+
+::: {.card title="**남Q씨의 이사 경로**"}
+```{python}
+import pandas as pd
+import numpy as np
+
+import json
+geo = json.load(open('bigdata/ia_iowa_zip_codes_geo.min.json', encoding = 'UTF-8'))
+
+def make_ames(num) : 
+    postal_code = geo["features"][num]["properties"]['ZCTA5CE10']
+    coordinate_list = geo["features"][num]["geometry"]["coordinates"][0]
+    coordinate_array = np.array(coordinate_list)
+    x = coordinate_array[:, 0].flatten()
+    y = coordinate_array[:, 1].flatten()
+
+    return pd.DataFrame({"postal_code" : postal_code, "x":x, "y":y})
+
+# num의 범위 : 935
+# make_ames(0)
+# make_ames(934)
+
+result = pd.DataFrame({
+    'postal_code' : [],
+    'x' : [],
+    'y' : []
+})
+
+
+for i in range(len(geo["features"])) : 
+    result = pd.concat([result, make_ames(i)], ignore_index=True)
+    
+# ---------------------------------------------------------
+
+# ames랑 waukee 그림 그리기
+# ames의 postal codes
+# waukee_postal_codes
+ames_postal_codes = ['50010', '50011', '50012', '50013', '50014']
+waukee_postal_code = ['50003', '50263', '50325']
+result['location'] = np.where(result['postal_code'].isin(ames_postal_codes), 'Ames',(
+                     np.where(result['postal_code'].isin(waukee_postal_code), 'Waukee','Iowa')
+                      ))
+
+import seaborn as sns
+sns.scatterplot(data = result, 
+                x='x', y='y', 
+                hue="location", s=1,
+                palette={"Ames":"red", "Iowa":"grey", "Waukee":"blue"}
+                )
+plt.xlim((-97, -89.5))
+plt.ylim((40.2, 43.8))
+plt.show()
+plt.clf()
+plt.close()
+```
+:::
+
+::: {.card title="**ames의 HOT PLACE!**"}
+```{python}
+import pandas as pd
+
+# https://docs.google.com/spreadsheets/d/1McH-oBzPZ8ewfyEl605wq-9b3gZHCIIBVbWHEHwNnIs/edit?gid=941998772#gid=941998772
+gsheet_url = "https://docs.google.com/spreadsheets/d/1McH-oBzPZ8ewfyEl605wq-9b3gZHCIIBVbWHEHwNnIs/gviz/tq?tqx=out:csv&sheet=ames-spot"
+
+hot_place = pd.read_csv(gsheet_url)
+hot_place.iloc[:, :-2]
+```
+:::
+
+## Row
+```{python}
+#| output: false
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import folium
+import plotly.express as px
+import plotly.graph_objects as go
+
+gsheet_url = "https://docs.google.com/spreadsheets/d/1McH-oBzPZ8ewfyEl605wq-9b3gZHCIIBVbWHEHwNnIs/gviz/tq?tqx=out:csv&sheet=ames-spot"
+
+hot_spot= pd.read_csv(gsheet_url)
+
+house = pd.read_csv('data/house_loc.csv')
+house.rename(columns={'Unnamed: 0': 'Id'}, inplace=True)
+
+fig = go.Figure(go.Scattermapbox(
+  lat = hot_spot['Latitude'], lon = hot_spot['Longitude'],
+  mode = 'markers+text',
+  marker = dict(symbol = 'marker', size = 15, color = 'blue'),
+  text = hot_spot['Spot'], textposition = 'top center'))
+  
+fig.update_layout(title = dict(text = '에임스 주요시설', x = 0.5),
+                  autosize = True, hovermode='closest',
+                  mapbox = dict(accesstoken = 'pk.eyJ1IjoibmFtcSIsImEiOiJjbHpub2Q4bzUwc2ozMnBweXd4OW9mbm9mIn0.qc2xzGw9Za-ftKFZkDrCcA',
+                                bearing = 0, center = dict(lon = -93.642897, lat = 42.034482),
+                                pitch = 0, zoom = 12, style = 'light'))
+```
+
+```{python}
+#| output: false
+import pandas as pd
+import numpy as np
+import plotly.graph_objects as go
+from sklearn.cluster import KMeans
+
+# 데이터 로드
+house = pd.read_csv('data/house_loc.csv')
+house.rename(columns={'Unnamed: 0': 'Id'}, inplace=True)
+
+# 클러스터링
+n_clusters = 10  # 클러스터 수
+kmeans = KMeans(n_clusters=n_clusters, random_state=0)
+house['Cluster'] = kmeans.fit_predict(house[['Latitude', 'Longitude']])
+centers = kmeans.cluster_centers_
+
+# 지도 시각화
+fig = go.Figure()
+
+# 클러스터별 색상 정의
+colorscale = 'Viridis'
+
+# 클러스터별 마커 추가
+for cluster in range(n_clusters):
+    cluster_data = house[house['Cluster'] == cluster]
+    fig.add_trace(go.Scattermapbox(
+        lat=cluster_data['Latitude'],
+        lon=cluster_data['Longitude'],
+        mode='markers',
+        marker=dict(
+            symbol='circle',
+            size=10,
+            color=cluster,
+            colorscale=colorscale,
+            cmin=0,
+            cmax=n_clusters-1,
+        ),
+        text=cluster_data['Id'].astype(str),
+        textposition='top right',
+        hovertemplate='<b>House ID: %{text}</b><extra></extra>',
+        name=f'Cluster {cluster+1}'
+    ))
+
+# 클러스터 중심점 추가
+fig.add_trace(go.Scattermapbox(
+    lat=centers[:, 0],
+    lon=centers[:, 1],
+    mode='markers',
+    marker=dict(
+        symbol='x',
+        size=20,
+        color='black'
+    ),
+    text=[f'Center {i+1}' for i in range(n_clusters)],
+    textposition='bottom center',
+    name='Cluster Centers'
+))
+
+# 카테고리별 마커 추가
+spot_Cultural = hot_spot.query("Category == 'Cultural' and Spot != 'Ames Municipal Airport'")
+spot_Education = hot_spot.query("Category == 'Education'")
+spot_Leisure = hot_spot.query("Category == 'Leisure'")
+spot_Airport = hot_spot.query("Spot == 'Ames Municipal Airport'")
+
+# 각 카테고리의 개수 계산
+cultural_count = len(spot_Cultural)
+education_count = len(spot_Education)
+leisure_count = len(spot_Leisure)
+airport_count = len(spot_Airport)
+house_count = len(house)
+
+# Cultural 아이콘 세부 설정
+ames_library = hot_spot.query("Spot == 'Ames Public Library'")
+reiman_gardens = hot_spot.query("Spot == 'Reiman Gardens'")
+stephens_auditorium = hot_spot.query("Spot == 'Stephens Auditorium'")
+octagon_center = hot_spot.query("Spot == 'Octagon Center For the Arts'")
+
+# Cultural 카테고리 - Cultural 관련 모든 아이콘을 추가
+fig.add_trace(go.Scattermapbox(
+    lat=spot_Cultural['Latitude'], 
+    lon=spot_Cultural['Longitude'],
+    mode='markers+text',
+    marker=dict(size=30),
+    text=spot_Cultural['Spot'], 
+    textposition='top center',
+    name='Cultural',
+    hoverinfo='text',
+    marker_symbol=[
+        'library' if spot == 'Ames Public Library' else
+        'park' if spot == 'Reiman Gardens' else
+        'theatre' if spot == 'Stephens Auditorium' else
+        'art-gallery'
+        for spot in spot_Cultural['Spot']
+    ],
+    marker_color=[
+        'brown' if spot == 'Ames Public Library' else
+        'green' if spot == 'Reiman Gardens' else
+        'purple' if spot == 'Stephens Auditorium' else
+        'blue'
+        for spot in spot_Cultural['Spot']
+    ]
+))
+
+# Education 카테고리 - 연필 아이콘으로 설정
+fig.add_trace(go.Scattermapbox(
+    lat=spot_Education['Latitude'], 
+    lon=spot_Education['Longitude'],
+    mode='markers+text',
+    marker=dict(symbol='school', size=30, color='green'),
+    text=spot_Education['Spot'], 
+    textposition='top center',
+    name='Education'
+))
+
+# Leisure 카테고리 - 수영장 아이콘으로 설정
+fig.add_trace(go.Scattermapbox(
+    lat=spot_Leisure['Latitude'], 
+    lon=spot_Leisure['Longitude'],
+    mode='markers+text',
+    marker=dict(symbol='swimming', size=30, color='orange'),
+    text=spot_Leisure['Spot'], 
+    textposition='top center',
+    name='Leisure'
+))
+
+# Ames Municipal Airport - 비행기 아이콘으로 설정
+fig.add_trace(go.Scattermapbox(
+    lat=spot_Airport['Latitude'], 
+    lon=spot_Airport['Longitude'],
+    mode='markers+text',
+    marker=dict(symbol='airport', size=30, color='purple'),
+    text=spot_Airport['Spot'], 
+    textposition='top center',
+    name='Airport'
+))
+
+# 레이아웃 설정
+fig.update_layout(
+    title=dict(text='에임스 주요시설', x=0.5),
+    autosize=True, 
+    hovermode='closest',
+    mapbox=dict(
+        accesstoken='pk.eyJ1IjoibmFtcSIsImEiOiJjbHpub2Q4bzUwc2ozMnBweXd4OW9mbm9mIn0.qc2xzGw9Za-ftKFZkDrCcA',
+        bearing=0, 
+        center=dict(lon=-93.642897, lat=42.034482),
+        pitch=0, 
+        zoom=12, 
+        style='light'
+    ),
+    updatemenus=[{
+        "buttons": [
+            {"args": [{"visible": [True] * n_clusters + [False, True, False, False, False]}],
+             "label": f"Cultural ({cultural_count})",
+             "method": "update"},
+            {"args": [{"visible": [True] * n_clusters + [False, False, True, False, False]}],
+             "label": f"Education ({education_count})",
+             "method": "update"},
+            {"args": [{"visible": [True] * n_clusters + [False, False, False, True, False]}],
+             "label": f"Leisure ({leisure_count})",
+             "method": "update"},
+            {"args": [{"visible": [True] * n_clusters + [False, False, False, False, True]}],
+             "label": f"Airport ({airport_count})",
+             "method": "update"},
+            {"args": [{"visible": [True] * n_clusters + [False, False, False, False, False]}],
+             "label": f"Houses ({house_count})",
+             "method": "update"},
+            {"args": [{"visible": [True] * 5 + [True] * n_clusters}],  # 클러스터는 항상 보이도록 설정
+             "label": "Show All",
+             "method": "update"}
+        ],
+        "direction": "down",
+        "showactive": True,
+        "x": 0.1,
+        "y": 1.1,
+        "xanchor": "left",
+        "yanchor": "top"
+    }]
+)
+
+```
+
+```{python}
+fig.show()
+```
+
+```{python}
+#| output: false
+import pandas as pd
+import folium
+from folium.plugins import HeatMap
+
+# 데이터 불러오기
+house_data = pd.read_csv('data/house_loc.csv')
+
+# 지도 초기화
+map_sig = folium.Map(location=[42.034482, -93.642897], zoom_start=12)
+
+# 각 장소에 대한 정보 (위치 정보 및 이미지 URL 포함)
+spot_data = {
+    'Ames Public Library': {
+        'location': [42.0266, -93.6445],
+        'image_url': "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQetsyzsoJD7b92Lny2TojVtMVYGfD3njw-sA&s"
+    },
+    'Mitchel': {
+        'location': [42.0347, -93.6489],
+        'image_url': "https://lh3.googleusercontent.com/p/AF1QipPDMW-e0ala8_n82T1jX6HG_JWWflfIDSxd6Exy=s680-w680-h510"
+    },
+    'Sawyer': {
+        'location': [42.0407, -93.6465],
+        'image_url': "https://amescsd.org/app/uploads/sites/8/2022/04/Sawyer-Main-Image-scaled-e1649709450394-3000x1000-c-default.jpg"
+    },
+    'Reiman Gardens': {
+        'location': [42.0178, -93.6344],
+        'image_url': "https://lh5.googleusercontent.com/p/AF1QipPhBH-d9SM-8PHt0cfuyRO8VszsLiLwNyeACx0=w540-h312-n-k-no"
+    },
+    'Hilton Coliseum': {
+        'location': [42.0279, -93.6358],
+        'image_url': "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Hilton_Coliseum_Inside_View.jpg/250px-Hilton_Coliseum_Inside_View.jpg"
+    },
+    'Stephens Auditorium': {
+        'location': [42.0277, -93.6377],
+        'image_url': "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQxQewscpasg669ypQmNvqdoBqBA0jgiyp8w&sg"
+    },
+    'Farm House Museum': {
+        'location': [42.0265, -93.6487],
+        'image_url': "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYuMQzhyB9qyl8eP1LRuEIJxdcVAEQ42T4lQHaWJpZD16aZGQ8qXJKqXfCEA&s"
+    },
+    'Iowa State University': {
+        'location': [42.0267, -93.6483],
+        'image_url': "https://media.licdn.com/dms/image/C4E1BAQGf37i29AlqpA/company-background_10000/0/1584130229015?e=2147483647&v=beta&t=3IUMwjsAjNa6Zo42wwLgAKR_BX_CGtTA_p0uwy4RD-k"
+    },
+    'Furman Aquatic Center': {
+        'location': [42.0349, -93.6273],
+        'image_url': "https://lh3.googleusercontent.com/p/AF1QipPIW7KoRYYBPXsU3lXCP_LwPOUw5pOFftLeqLWd=s680-w680-h510"
+    },
+    'Tom Evans Plaza': {
+        'location': [42.0284, -93.6284],
+        'image_url': "https://lh3.googleusercontent.com/p/AF1QipNmY43hWQw_BVhT1AF9zzaeYuPCCkThavee8px3=s680-w680-h510"
+    },
+    'Octagon Center For the Arts': {
+        'location': [42.0264, -93.6255],
+        'image_url': "https://lh3.googleusercontent.com/p/AF1QipMqzpEh8vwJsxiRNvgiZgAozwe4yVJ5PBipAsRZ=s1360-w1360-h1020"
+    },
+    'Ames High School': {
+        'location': [42.0332, -93.6237],
+        'image_url': "https://lh3.googleusercontent.com/p/AF1QipPjZiW8ejuvi7pvr8_Augg0Rb5j7LEchpNKo6Kh=s1360-w1360-h1020"
+    },
+    'Ames Middle School': {
+        'location': [42.0276, -93.6187],
+        'image_url': "https://www.amestrib.com/gcdn/authoring/authoring-images/2024/02/26/NATR/72747516007-226-ams-building-photos-1.jpg?width=660&height=364&fit=crop&format=pjpg&auto=webp"},
+     
+     'Ames Municipal Airport': {
+        'location': [41.998834669594, -93.6223337603737],
+        'image_url': "https://www.econdev.iastate.edu/wp-content/uploads/2017/04/Ames-airport.jpg"}
+        
+   
+}
+
+# 장소에 대한 마커와 팝업 추가
+for name, data in spot_data.items():
+    popup_html = f"""
+    <div>
+        <img src="{data['image_url']}" alt="Spot Image" style="width: 300px; height: auto;"/>
+        <p>{name}</p>
+    </div>
+    """
+    folium.Marker(
+        location=data['location'],
+        popup=folium.Popup(popup_html, max_width=300),
+        icon=folium.Icon(color='red', icon='info-sign')
+    ).add_to(map_sig)
+
+# 히트맵을 위한 데이터 준비
+heat_data = [[row['Latitude'], row['Longitude'], row['Sale_Price']] for index, row in house_data.iterrows()]
+
+# 히트맵 추가
+HeatMap(heat_data, radius=15, max_zoom=13, blur=10).add_to(map_sig)
+```
+
+```{python}
+# 지도 표시
+map_sig
+```
+
+# 매물 선택
+```{python}
+## 집조건. 차고 2개, 화장실 2개, 주거형태가 단독주택1Fam인 집.
+house_data = pd.read_csv('data/train.csv')
+filtered_houses = house_data[(house_data['GarageCars'] >= 2) & (house_data['FullBath'] >= 2) * (house_data['BldgType'] == '1Fam')]
+#& (house_data['Neighborhood'] == 'SWISU')]
+filtered_houses.head()
+
+house_loc = pd.read_csv('data/house_loc.csv')
+house_loc.rename(columns={'Unnamed: 0': 'Id'}, inplace=True)
+
+filtered_house_locations = house_loc[house_loc['Id'].isin(filtered_houses['Id'])]
+
+fig = go.Figure(go.Scattermapbox(
+    lat = filtered_house_locations['Latitude'], 
+    lon = filtered_house_locations['Longitude'],
+    mode = 'markers',
+    marker = dict(symbol = 'circle', size = 8, color = 'red'),
+    text = filtered_house_locations['Id'].astype(str),
+    textposition = 'top right',
+    hovertemplate = '<b>House ID: %{text}</b><extra></extra>',
+    name = 'Filtered Houses'))
+
+# Update layout
+fig.update_layout(
+    title = dict(text = '에임스 주요시설', x = 0.5),
+    autosize = True, 
+    hovermode = 'closest',
+    mapbox = dict(
+        accesstoken = 'pk.eyJ1IjoibmFtcSIsImEiOiJjbHpub2Q4bzUwc2ozMnBweXd4OW9mbm9mIn0.qc2xzGw9Za-ftKFZkDrCcA',
+        bearing = 0, 
+        center = dict(lon = -93.642897, lat = 42.034482),
+        pitch = 0, 
+        zoom = 12, 
+        style = 'light')
+)
+
+# Add hot spots
+fig.add_trace(go.Scattermapbox(
+    lat = hot_spot['Latitude'], 
+    lon = hot_spot['Longitude'],
+    mode = 'markers+text',
+    marker = dict(symbol = 'marker', size = 15, color = 'blue'),
+    text = hot_spot['Spot'], 
+    textposition = 'top center',
+    name = 'Hot Spots'
+))
+
+# Show the map
+# fig.show()
+```
+
+
+# 매입 적기
+
+## row
+
+### Column {.tabset}
+
+```{python}
+#| title: Chart 1
+import plotly.graph_objects as go
+import plotly.express as px
+import pandas as pd
+import numpy as np
+
+# 데이터 로드 및 정보 확인
+house_train = pd.read_csv("./data/train.csv")
+house_train = house_train[['YrSold', 'MoSold', 'SalePrice']]
+
+# 년도별로 group by 해서 Sale_Price의 평균 구하기
+group_df = house_train.groupby(['YrSold', 'MoSold'])['SalePrice'].agg('mean').reset_index()
+
+# 새로운 'YrMo' 컬럼을 생성하여 시간 축으로 사용
+group_df['YrMo'] = group_df['MoSold'].astype(str) + '/' + group_df['YrSold'].astype(str)
+group_df['YrMo'] = pd.to_datetime(group_df['YrMo'], format='%m/%Y')
+
+# 애니메이션 프레임 생성 (월별로 프레임 정의)
+frames = []
+months = sorted(group_df['YrMo'].unique())
+
+# 월별로 누적된 데이터를 포함하는 프레임 생성
+for month in months:
+    filtered_df = group_df[group_df['YrMo'] <= month]
+    frames.append(go.Frame(
+        data=[
+            go.Scatter(
+                x=filtered_df['YrMo'],
+                y=filtered_df['SalePrice'],
+                mode='markers+lines',
+                marker=dict(color='red'),
+                line=dict(color='blue', dash='dash'),
+            )
+        ],
+        name=month.strftime('%b %Y')
+    ))
+
+# 고정된 프레임 (전체 데이터)
+fixed_frame = go.Frame(
+    data=[
+        go.Scatter(
+            x=group_df['YrMo'],
+            y=group_df['SalePrice'],
+            mode='markers+lines',
+            marker=dict(color='red'),
+            line=dict(color='blue', dash='dash'),
+        )
+    ],
+    name='Fixed'
+)
+
+# 초기 상태로 돌아가는 프레임 추가
+frames.append(fixed_frame)
+
+# 레이아웃 정의
+layout = go.Layout(
+    title="2006-2010년 월별 평균 집값",
+    xaxis=dict(
+        title="Date",
+        tickformat='%b %Y',
+        range=['2005-12-01', '2010-08-01']
+    ),
+    yaxis=dict(
+        title="Mean Sale Price",
+        range=[group_df['SalePrice'].min()-5000, group_df['SalePrice'].max()+5000]
+    ),
+    updatemenus=[
+        {
+            "buttons": [
+                {
+                    "args": [None, {"frame": {"duration": 100, "redraw": True}, "fromcurrent": True, "mode": "immediate"}],
+                    "label": "Play",
+                    "method": "animate",
+                },
+                {
+                    "args": [[None], {"frame": {"duration": 0, "redraw": False}, "mode": "immediate", "transition": {"duration": 0}}],
+                    "label": "Pause",
+                    "method": "animate",
+                }
+            ],
+            "direction": "left",
+            "pad": {"r": 10, "t": 87},
+            "showactive": False,
+            "type": "buttons",
+            "x": 0.1,
+            "xanchor": "right",
+            "y": 0,
+            "yanchor": "top",
+        }
+    ],
+    sliders=[]  # 슬라이더를 빈 리스트로 설정하여 제거
+)
+
+# Figure 생성
+fig = go.Figure(
+    data=[
+        go.Scatter(
+            x=group_df['YrMo'],
+            y=group_df['SalePrice'],
+            mode='markers+lines',
+            marker=dict(color='red'),
+            line=dict(color='blue', dash='dash'),
+        )
+    ],
+    layout=layout,
+    frames=frames
+)
+
+# Figure 표시
+fig.show()
+```
+
+```{python}
+#| title: Chart 2
+group_df2 = house_train.groupby(['MoSold'])['SalePrice'].agg('mean').reset_index()
+
+x = group_df2['MoSold']
+y = group_df2['SalePrice']
+
+fig = go.Figure(
+  data = {
+    'type' : 'scatter', 'mode' : 'markers+lines',
+    'x' : x, 'y' : y,
+    'marker' : {'color' : 'red'},
+    'line' : {'color' : 'black', 'dash' : 'solid'},
+    'showlegend' : False
+  },
+  layout = {
+    'title'  : {'text' : "월별 집값 차이",
+                'font' : {'size' : 25},
+                'x' : 0.5},
+    'margin' : {'t': 50, 'b' : 25, 'l' : 25, 'r' : 25}
+  }
+)
+
+fig.show()
+```
+
+```{python}
+#| output: false
+df_dict = {}
+for i in range(1, 13):
+    df_dict[i] = group_df[group_df['MoSold'] == i]
+
+x = {}
+y = {}
+for i in range(1,13):
+  x[i] = df_dict[i]['YrSold']
+  y[i] = df_dict[i]['SalePrice']
+
+
+from plotly.subplots import make_subplots
+
+fig = make_subplots(rows= 4, cols= 3, subplot_titles=[f"{i}월" for i in range(1, 13)])
+
+fig.add_trace(go.Scatter(x=x[1], y=y[1], showlegend=False), 
+              row=1, col=1)
+fig.add_trace(go.Scatter(x=x[1], y=y[2], showlegend=False), 
+              row=1, col=2)
+fig.add_trace(go.Scatter(x=x[1], y=y[3], showlegend=False),
+              row=1, col=3)
+fig.add_trace(go.Scatter(x=x[1], y=y[4], showlegend=False),
+              row=2, col=1)
+fig.add_trace(go.Scatter(x=x[1], y=y[5], showlegend=False),
+              row=2, col=2)
+fig.add_trace(go.Scatter(x=x[1], y=y[6], showlegend=False),
+              row=2, col=3)
+fig.add_trace(go.Scatter(x=x[1], y=y[7], showlegend=False),
+              row=3, col=1)
+fig.add_trace(go.Scatter(x=x[1], y=y[8], showlegend=False),
+              row=3, col=2)
+fig.add_trace(go.Scatter(x=x[1], y=y[9], showlegend=False),
+              row=3, col=3)
+fig.add_trace(go.Scatter(x=x[1], y=y[10], showlegend=False),
+              row=4, col=1)
+fig.add_trace(go.Scatter(x=x[1], y=y[11], showlegend=False),
+              row=4, col=2)
+fig.add_trace(go.Scatter(x=x[1], y=y[12], showlegend=False),
+              row=4, col=3)
+```
+
+## row
+
+```{python}
+fig.add_trace(go.Scatter(x=x[1], y=y[12], showlegend=False),
+              row=4, col=3)
+```

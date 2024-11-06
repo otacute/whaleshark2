@@ -7,7 +7,7 @@ format:
         logo: palmerpenguins.png
 ---
 
-# Page 1
+# 
 
 <배경>
 - Name: 강남규

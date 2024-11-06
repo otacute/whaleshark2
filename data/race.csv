@@ -1,0 +1,141 @@
+ID Race,Race,ID Ethnicity,Ethnicity,ID Year,Year,Hispanic Population Moe,Geography,ID Geography,Slug Geography,Population,share
+0,"White Alone",0,"Not Hispanic or Latino",2022,"2022",607,"Ames, IA","16000US1901855","ames-ia",51902,0.7832490756809779
+0,"White Alone",1,"Hispanic or Latino",2022,"2022",230,"Ames, IA","16000US1901855","ames-ia",916,0.013823285293895721
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2022,"2022",256,"Ames, IA","16000US1901855","ames-ia",2108,0.031811665283332076
+1,"Black or African American Alone",1,"Hispanic or Latino",2022,"2022",9,"Ames, IA","16000US1901855","ames-ia",6,0.00009054553685957896
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2022,"2022",36,"Ames, IA","16000US1901855","ames-ia",81,0.001222364747604316
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2022,"2022",62,"Ames, IA","16000US1901855","ames-ia",120,0.0018109107371915793
+3,"Asian Alone",0,"Not Hispanic or Latino",2022,"2022",409,"Ames, IA","16000US1901855","ames-ia",6678,0.10077718252471139
+3,"Asian Alone",1,"Hispanic or Latino",2022,"2022",15.000000000000002,"Ames, IA","16000US1901855","ames-ia",12,0.00018109107371915793
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2022,"2022",30.000000000000004,"Ames, IA","16000US1901855","ames-ia",22,0.0003320003018184562
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2022,"2022",43,"Ames, IA","16000US1901855","ames-ia",23,0.00034709122462838604
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2022,"2022",86,"Ames, IA","16000US1901855","ames-ia",121,0.001826001660001509
+5,"Some Other Race Alone",1,"Hispanic or Latino",2022,"2022",219,"Ames, IA","16000US1901855","ames-ia",926,0.01397419452199502
+6,"Two or More Races",0,"Not Hispanic or Latino",2022,"2022",568.9578191746731,"Ames, IA","16000US1901855","ames-ia",2774,0.04186221987474534
+6,"Two or More Races",1,"Hispanic or Latino",2022,"2022",191.59592897553958,"Ames, IA","16000US1901855","ames-ia",576,0.00869237153851958
+0,"White Alone",0,"Not Hispanic or Latino",2021,"2021",591,"Ames, IA","16000US1901855","ames-ia",51427,0.7848814138762553
+0,"White Alone",1,"Hispanic or Latino",2021,"2021",285,"Ames, IA","16000US1901855","ames-ia",1356,0.020695338970116908
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2021,"2021",270,"Ames, IA","16000US1901855","ames-ia",2008,0.030646195171087572
+1,"Black or African American Alone",1,"Hispanic or Latino",2021,"2021",17,"Ames, IA","16000US1901855","ames-ia",9,0.0001373584444919264
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2021,"2021",50,"Ames, IA","16000US1901855","ames-ia",78,0.0011904398522633618
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2021,"2021",35,"Ames, IA","16000US1901855","ames-ia",52,0.0007936265681755746
+3,"Asian Alone",0,"Not Hispanic or Latino",2021,"2021",378,"Ames, IA","16000US1901855","ames-ia",6888,0.10512499618448766
+3,"Asian Alone",1,"Hispanic or Latino",2021,"2021",20,"Ames, IA","16000US1901855","ames-ia",16,0.0002441927902078691
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2021,"2021",24,"Ames, IA","16000US1901855","ames-ia",14,0.00021366869143188546
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2021,"2021",24,"Ames, IA","16000US1901855","ames-ia",0,0
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2021,"2021",83,"Ames, IA","16000US1901855","ames-ia",107,0.0016330392845151248
+5,"Some Other Race Alone",1,"Hispanic or Latino",2021,"2021",222,"Ames, IA","16000US1901855","ames-ia",654,0.00998138029974665
+6,"Two or More Races",0,"Not Hispanic or Latino",2021,"2021",568.1003432493243,"Ames, IA","16000US1901855","ames-ia",2516,0.038399316260187416
+6,"Two or More Races",1,"Hispanic or Latino",2021,"2021",124.06449935416659,"Ames, IA","16000US1901855","ames-ia",397,0.006059033607032752
+0,"White Alone",0,"Not Hispanic or Latino",2020,"2020",448,"Ames, IA","16000US1901855","ames-ia",51826,0.7809707508928437
+0,"White Alone",1,"Hispanic or Latino",2020,"2020",333,"Ames, IA","16000US1901855","ames-ia",1556,0.023447506818764032
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2020,"2020",316,"Ames, IA","16000US1901855","ames-ia",1996,0.030077907204532784
+1,"Black or African American Alone",1,"Hispanic or Latino",2020,"2020",20,"Ames, IA","16000US1901855","ames-ia",18,0.0002712436521450852
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2020,"2020",47,"Ames, IA","16000US1901855","ames-ia",99,0.0014918400867979687
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2020,"2020",15.000000000000002,"Ames, IA","16000US1901855","ames-ia",21,0.00031645092750259943
+3,"Asian Alone",0,"Not Hispanic or Latino",2020,"2020",325,"Ames, IA","16000US1901855","ames-ia",7576,0.1141634393695092
+3,"Asian Alone",1,"Hispanic or Latino",2020,"2020",19,"Ames, IA","16000US1901855","ames-ia",15,0.00022603637678757102
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2020,"2020",23,"Ames, IA","16000US1901855","ames-ia",0,0
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2020,"2020",23,"Ames, IA","16000US1901855","ames-ia",0,0
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2020,"2020",65,"Ames, IA","16000US1901855","ames-ia",58,0.0008740073235786079
+5,"Some Other Race Alone",1,"Hispanic or Latino",2020,"2020",189,"Ames, IA","16000US1901855","ames-ia",645,0.009719564201865554
+6,"Two or More Races",0,"Not Hispanic or Latino",2020,"2020",455.92323915325926,"Ames, IA","16000US1901855","ames-ia",2227,0.03355886740706138
+6,"Two or More Races",1,"Hispanic or Latino",2020,"2020",137.93114224133723,"Ames, IA","16000US1901855","ames-ia",324,0.004882385738611534
+0,"White Alone",0,"Not Hispanic or Latino",2019,"2019",391,"Ames, IA","16000US1901855","ames-ia",51949,0.7868318616239796
+0,"White Alone",1,"Hispanic or Latino",2019,"2019",258,"Ames, IA","16000US1901855","ames-ia",1717,0.02600608878724081
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2019,"2019",318,"Ames, IA","16000US1901855","ames-ia",2041,0.03091346954849068
+1,"Black or African American Alone",1,"Hispanic or Latino",2019,"2019",70,"Ames, IA","16000US1901855","ames-ia",62,0.0009390666888811474
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2019,"2019",59,"Ames, IA","16000US1901855","ames-ia",136,0.002059888220771549
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2019,"2019",18,"Ames, IA","16000US1901855","ames-ia",21,0.0003180709752661951
+3,"Asian Alone",0,"Not Hispanic or Latino",2019,"2019",306,"Ames, IA","16000US1901855","ames-ia",7498,0.1135664844069491
+3,"Asian Alone",1,"Hispanic or Latino",2019,"2019",27,"Ames, IA","16000US1901855","ames-ia",20,0.00030292473834875723
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2019,"2019",23,"Ames, IA","16000US1901855","ames-ia",0,0
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2019,"2019",23,"Ames, IA","16000US1901855","ames-ia",0,0
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2019,"2019",57.00000000000001,"Ames, IA","16000US1901855","ames-ia",53,0.0008027505566242068
+5,"Some Other Race Alone",1,"Hispanic or Latino",2019,"2019",203,"Ames, IA","16000US1901855","ames-ia",575,0.008709086227526771
+6,"Two or More Races",0,"Not Hispanic or Latino",2019,"2019",398.20848810641894,"Ames, IA","16000US1901855","ames-ia",1743,0.026399890947094194
+6,"Two or More Races",1,"Hispanic or Latino",2019,"2019",107.35455276791944,"Ames, IA","16000US1901855","ames-ia",208,0.0031504172788270756
+0,"White Alone",0,"Not Hispanic or Latino",2018,"2018",427.99999999999994,"Ames, IA","16000US1901855","ames-ia",52355,0.7940154996435992
+0,"White Alone",1,"Hispanic or Latino",2018,"2018",297,"Ames, IA","16000US1901855","ames-ia",1907,0.02892154632452189
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2018,"2018",328,"Ames, IA","16000US1901855","ames-ia",1639,0.024857060527473194
+1,"Black or African American Alone",1,"Hispanic or Latino",2018,"2018",64,"Ames, IA","16000US1901855","ames-ia",54,0.0008189635561217526
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2018,"2018",57.99999999999999,"Ames, IA","16000US1901855","ames-ia",125,0.001895748972504057
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2018,"2018",22,"Ames, IA","16000US1901855","ames-ia",0,0
+3,"Asian Alone",0,"Not Hispanic or Latino",2018,"2018",450,"Ames, IA","16000US1901855","ames-ia",7057,0.10702640399168904
+3,"Asian Alone",1,"Hispanic or Latino",2018,"2018",18,"Ames, IA","16000US1901855","ames-ia",15,0.00022748987670048683
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2018,"2018",41,"Ames, IA","16000US1901855","ames-ia",25,0.0003791497945008114
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2018,"2018",22,"Ames, IA","16000US1901855","ames-ia",0,0
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2018,"2018",56,"Ames, IA","16000US1901855","ames-ia",45,0.0006824696301014605
+5,"Some Other Race Alone",1,"Hispanic or Latino",2018,"2018",188,"Ames, IA","16000US1901855","ames-ia",445,0.006748866342114443
+6,"Two or More Races",0,"Not Hispanic or Latino",2018,"2018",445.1898471438898,"Ames, IA","16000US1901855","ames-ia",2153,0.03265238030240988
+6,"Two or More Races",1,"Hispanic or Latino",2018,"2018",79.60527620704548,"Ames, IA","16000US1901855","ames-ia",117,0.0017744210382637973
+0,"White Alone",0,"Not Hispanic or Latino",2017,"2017",390,"Ames, IA","16000US1901855","ames-ia",52119,0.8017690946850242
+0,"White Alone",1,"Hispanic or Latino",2017,"2017",244.99999999999997,"Ames, IA","16000US1901855","ames-ia",1823,0.02804399661564495
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2017,"2017",250.99999999999997,"Ames, IA","16000US1901855","ames-ia",1683,0.0258903161295285
+1,"Black or African American Alone",1,"Hispanic or Latino",2017,"2017",47,"Ames, IA","16000US1901855","ames-ia",46,0.0007076378740096916
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2017,"2017",64,"Ames, IA","16000US1901855","ames-ia",157,0.002415198830859165
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2017,"2017",22,"Ames, IA","16000US1901855","ames-ia",0,0
+3,"Asian Alone",0,"Not Hispanic or Latino",2017,"2017",458,"Ames, IA","16000US1901855","ames-ia",6649,0.10228443965848781
+3,"Asian Alone",1,"Hispanic or Latino",2017,"2017",10,"Ames, IA","16000US1901855","ames-ia",6,0.00009230059226213368
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2017,"2017",47,"Ames, IA","16000US1901855","ames-ia",30,0.0004615029613106684
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2017,"2017",15.000000000000002,"Ames, IA","16000US1901855","ames-ia",9,0.00013845088839320053
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2017,"2017",23,"Ames, IA","16000US1901855","ames-ia",14,0.00021536804861164527
+5,"Some Other Race Alone",1,"Hispanic or Latino",2017,"2017",104,"Ames, IA","16000US1901855","ames-ia",316,0.004861164525805707
+6,"Two or More Races",0,"Not Hispanic or Latino",2017,"2017",445.2201702528761,"Ames, IA","16000US1901855","ames-ia",2083,0.03204368894700408
+6,"Two or More Races",1,"Hispanic or Latino",2017,"2017",45,"Ames, IA","16000US1901855","ames-ia",70,0.0010768402430582262
+0,"White Alone",0,"Not Hispanic or Latino",2016,"2016",391,"Ames, IA","16000US1901855","ames-ia",51907,0.8101228286485728
+0,"White Alone",1,"Hispanic or Latino",2016,"2016",273,"Ames, IA","16000US1901855","ames-ia",1625,0.02536169681457088
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2016,"2016",299,"Ames, IA","16000US1901855","ames-ia",1870,0.029185460334306183
+1,"Black or African American Alone",1,"Hispanic or Latino",2016,"2016",99,"Ames, IA","16000US1901855","ames-ia",124,0.0019352925569272549
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2016,"2016",70,"Ames, IA","16000US1901855","ames-ia",123,0.0019196853588875188
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2016,"2016",22,"Ames, IA","16000US1901855","ames-ia",0,0
+3,"Asian Alone",0,"Not Hispanic or Latino",2016,"2016",394,"Ames, IA","16000US1901855","ames-ia",6142,0.09585941036005806
+3,"Asian Alone",1,"Hispanic or Latino",2016,"2016",8,"Ames, IA","16000US1901855","ames-ia",4,0.0000624287921589437
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2016,"2016",34,"Ames, IA","16000US1901855","ames-ia",21,0.00032775115883445447
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2016,"2016",15.000000000000002,"Ames, IA","16000US1901855","ames-ia",8,0.0001248575843178874
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2016,"2016",22,"Ames, IA","16000US1901855","ames-ia",0,0
+5,"Some Other Race Alone",1,"Hispanic or Latino",2016,"2016",85,"Ames, IA","16000US1901855","ames-ia",278,0.004338801055046588
+6,"Two or More Races",0,"Not Hispanic or Latino",2016,"2016",452.31957729021633,"Ames, IA","16000US1901855","ames-ia",1931,0.030137499414730075
+6,"Two or More Races",1,"Hispanic or Latino",2016,"2016",33.83784863137726,"Ames, IA","16000US1901855","ames-ia",40,0.0006242879215894371
+0,"White Alone",0,"Not Hispanic or Latino",2015,"2015",377,"Ames, IA","16000US1901855","ames-ia",51367,0.817750537292048
+0,"White Alone",1,"Hispanic or Latino",2015,"2015",263,"Ames, IA","16000US1901855","ames-ia",1442,0.022956300246756347
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2015,"2015",258,"Ames, IA","16000US1901855","ames-ia",1975,0.03144153466528695
+1,"Black or African American Alone",1,"Hispanic or Latino",2015,"2015",102,"Ames, IA","16000US1901855","ames-ia",140,0.002228767014248189
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2015,"2015",75,"Ames, IA","16000US1901855","ames-ia",85,0.0013531799729364006
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2015,"2015",22,"Ames, IA","16000US1901855","ames-ia",0,0
+3,"Asian Alone",0,"Not Hispanic or Latino",2015,"2015",400,"Ames, IA","16000US1901855","ames-ia",5786,0.09211175674600015
+3,"Asian Alone",1,"Hispanic or Latino",2015,"2015",8,"Ames, IA","16000US1901855","ames-ia",5,0.00007959882193743533
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2015,"2015",33,"Ames, IA","16000US1901855","ames-ia",19,0.0003024755233622542
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2015,"2015",18,"Ames, IA","16000US1901855","ames-ia",12,0.00019103717264984477
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2015,"2015",22,"Ames, IA","16000US1901855","ames-ia",0,0
+5,"Some Other Race Alone",1,"Hispanic or Latino",2015,"2015",77,"Ames, IA","16000US1901855","ames-ia",254,0.0040436201544217145
+6,"Two or More Races",0,"Not Hispanic or Latino",2015,"2015",371.53869246688157,"Ames, IA","16000US1901855","ames-ia",1684,0.02680888322852822
+6,"Two or More Races",1,"Hispanic or Latino",2015,"2015",39,"Ames, IA","16000US1901855","ames-ia",46,0.000732309161824405
+0,"White Alone",0,"Not Hispanic or Latino",2014,"2014",414,"Ames, IA","16000US1901855","ames-ia",50271,0.820402767804687
+0,"White Alone",1,"Hispanic or Latino",2014,"2014",308,"Ames, IA","16000US1901855","ames-ia",1451,0.02367974410862328
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2014,"2014",202,"Ames, IA","16000US1901855","ames-ia",1996,0.03257392780207585
+1,"Black or African American Alone",1,"Hispanic or Latino",2014,"2014",115,"Ames, IA","16000US1901855","ames-ia",109,0.001778836738690515
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2014,"2014",85,"Ames, IA","16000US1901855","ames-ia",123,0.002007311182192049
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2014,"2014",22,"Ames, IA","16000US1901855","ames-ia",0,0
+3,"Asian Alone",0,"Not Hispanic or Latino",2014,"2014",367,"Ames, IA","16000US1901855","ames-ia",5436,0.08871336249102423
+3,"Asian Alone",1,"Hispanic or Latino",2014,"2014",8,"Ames, IA","16000US1901855","ames-ia",5,0.00008159801553626216
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2014,"2014",30.000000000000004,"Ames, IA","16000US1901855","ames-ia",19,0.0003100724590377962
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2014,"2014",18,"Ames, IA","16000US1901855","ames-ia",11,0.00017951563417977675
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2014,"2014",18,"Ames, IA","16000US1901855","ames-ia",11,0.00017951563417977675
+5,"Some Other Race Alone",1,"Hispanic or Latino",2014,"2014",112,"Ames, IA","16000US1901855","ames-ia",352,0.005744500293752856
+6,"Two or More Races",0,"Not Hispanic or Latino",2014,"2014",325.8128297044179,"Ames, IA","16000US1901855","ames-ia",1457,0.023777661727266794
+6,"Two or More Races",1,"Hispanic or Latino",2014,"2014",33.01514803843836,"Ames, IA","16000US1901855","ames-ia",35,0.0005711861087538352
+0,"White Alone",0,"Not Hispanic or Latino",2013,"2013",404,"Ames, IA","16000US1901855","ames-ia",49640,0.8250232681824226
+0,"White Alone",1,"Hispanic or Latino",2013,"2013",362,"Ames, IA","16000US1901855","ames-ia",1296,0.02153968887116075
+1,"Black or African American Alone",0,"Not Hispanic or Latino",2013,"2013",210,"Ames, IA","16000US1901855","ames-ia",1970,0.032741656694588485
+1,"Black or African American Alone",1,"Hispanic or Latino",2013,"2013",106,"Ames, IA","16000US1901855","ames-ia",101,0.0016786331604839782
+2,"American Indian & Alaska Native Alone",0,"Not Hispanic or Latino",2013,"2013",51,"Ames, IA","16000US1901855","ames-ia",53,0.000880866905996543
+2,"American Indian & Alaska Native Alone",1,"Hispanic or Latino",2013,"2013",23,"Ames, IA","16000US1901855","ames-ia",0,0
+3,"Asian Alone",0,"Not Hispanic or Latino",2013,"2013",225.99999999999997,"Ames, IA","16000US1901855","ames-ia",5493,0.09129437574790586
+3,"Asian Alone",1,"Hispanic or Latino",2013,"2013",23,"Ames, IA","16000US1901855","ames-ia",0,0
+4,"Native Hawaiian & Other Pacific Islander Alone",0,"Not Hispanic or Latino",2013,"2013",23,"Ames, IA","16000US1901855","ames-ia",0,0
+4,"Native Hawaiian & Other Pacific Islander Alone",1,"Hispanic or Latino",2013,"2013",16,"Ames, IA","16000US1901855","ames-ia",10,0.00016620130301821565
+5,"Some Other Race Alone",0,"Not Hispanic or Latino",2013,"2013",18,"Ames, IA","16000US1901855","ames-ia",11,0.00018282143332003722
+5,"Some Other Race Alone",1,"Hispanic or Latino",2013,"2013",115.99999999999999,"Ames, IA","16000US1901855","ames-ia",404,0.006714532641935913
+6,"Two or More Races",0,"Not Hispanic or Latino",2013,"2013",269.60155785900054,"Ames, IA","16000US1901855","ames-ia",1141,0.018963568674378407
+6,"Two or More Races",1,"Hispanic or Latino",2013,"2013",48.46648326421054,"Ames, IA","16000US1901855","ames-ia",49,0.0008143863847892567

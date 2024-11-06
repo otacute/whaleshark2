@@ -1,0 +1,54 @@
+---
+title: "구해줘! 남Q의 홈즈"
+format:
+  html:
+    code-fold: true
+    toc: true
+    number-sections: true
+    toc-title: "목차"
+    css: styles.css
+editor: visual
+---
+
+
+
+# 구해줘! 남Q의 홈즈 고래상어조
+
+## 남규의 프로필 {.column-page}
+
+```{r}
+library(flexdashboard)
+
+column(6, 
+  card(
+    title: "남규의 프로필",
+    content: "
+    ![남규 이미지](path_to_image/namgyu_image.png)
+    
+    - **Name**: 강남규
+    - **Location**: Ames, Iowa
+    - **Age**: 58
+    - **Work**: 도서관 사서
+    - **Family**: 아내, 아들, 딸 (4인 가정)
+    - **Character**: 가족의 행복이 곧 본인의 행복! 
+    평생 지낸 인생 마지막 집을 구하기 위해 아이오와주 에임스시 내에서 이사를 가기로 결정했다.
+    "
+  )
+)
+
+column(6, 
+  card(
+    title: "남규의 젊은 시절 인연 부동산 전문가 이삭",
+    content: "
+    ![이삭 이미지](path_to_image/isaac_image.png)
+    
+    부동산 전문가 이삭씨(67세)에게 집 매물 추천을 받기로 했다.
+    - 아들 강남공(22세)군: 아이오와주 주립대학 재학
+    - 딸 강된장(18세): Ames High School 에 재학 중이다.
+    <원하는 집 조건>
+    - 보유 차량: 2대
+    - 화장실 2개: 가족들의 편의를 위해서 최소 샤워가 가능한 화장실 1개, 간이 화장실 1개 이상을 원함.
+    - 조건에 맞는 남규씨의 새 집을 고르자
+    "
+  )
+)
